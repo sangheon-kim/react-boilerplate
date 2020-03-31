@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "TINYPNG_KEY=gp3cqw9LGJWzq36vpfPzxNJpKGgw2Q6W webpack-dev-server --config webpack.dev.js --port 3000",
+    "dev": "webpack-dev-server --config webpack.dev.js --port 3000",
     "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
