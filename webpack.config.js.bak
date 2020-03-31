@@ -1,0 +1,42 @@
+var path = require("path");
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+module.exports = {
+  mode: "development",
+  entry: ["./src/index.js"],
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "build")
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(css|scss)$/,
+        use: [
+          "style-loader",
+          { loader: MiniCssExtractPlugin.loader },
+          "css-loader",
+          "sass-loader"
+        ]
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"]
+      },
+      {
+        test: /\.(png|jp?g)$/,
+        use: [
+          {
+            loader: "file-loader"
+          }
+        ]
+      }
+    ]
+  },
+  plugins: [new MiniCssExtractPlugin()],
+  resolve: {
+    extensions: ["*", ".js", ".jsx"]
+  },
+  devtool: "sourcemap"
+};
