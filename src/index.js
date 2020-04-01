@@ -1,8 +1,27 @@
 import React from "react";
+import App from "./App";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import createSagaMiddleware from "redux-saga";
+import rootSaga from "./store/sagas";
 import "./assets/styles/reset.scss";
 
-import Header from "./components/Header/Header";
+const sagaMiddleware = createSagaMiddleware();
+import rootReducer from "./store/reducers";
 
-const title = "Hello world!!";
-ReactDOM.render(<Header />, document.getElementById("example"));
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(
+  rootReducer,
+  composeEnhancer(applyMiddleware(sagaMiddleware))
+);
+
+sagaMiddleware.run(rootSaga);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("example")
+);

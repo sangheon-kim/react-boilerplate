@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/assets/styles/reset.scss"],"names":[],"mappings":"AAAA;AACA;AACA,aAAa;;AAEb;AACA,aAAa","file":"main.css","sourcesContent":["* {\n  margin: 0;\n  padding: 0; }\n\ndiv {\n  color: red; }\n"],"sourceRoot":""}

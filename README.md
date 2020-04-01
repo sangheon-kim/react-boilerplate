@@ -20,3 +20,18 @@
 
 - [x] devide mode (webpack.config.js, webpack.dev.js)
 - [x] delete derectory .cache
+
+### v1.1.0 (20200401)
+
+- [x] interlock Redux
+- [x] add rule of Fonts file
+- [x] edit rule of loader Output file directory
+- [x] interlock Redux-saga
+- [x] Context interlock
+- [x] add Unit Test(jest, enzyme)
+- [x] add SVG Loader
+
+### v1.2.0 (20200402)
+
+- [ ] add E2E Test(Cypress)
+- [ ]

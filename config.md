@@ -18,3 +18,5 @@ babel-loader : Webpack을 사용할 때 babel을 적용하기 위한 라이브�
 Plugin - 플러그인은 웹팩의 기본적인 동작에 추가적인 기능을 제공하는 속성
 로더랑 비교시 로더는 파일을 해석하고 변환하는 과정에 관리,
 플러그인은 해당 결과물의 형태를 바꾸는 역할을 한다.
+
+Uncaught ReferenceError: regeneratorRuntime is not defined - babel-polyfill 수정 후에 webpack 설정에 넣어준다.

@@ -3,6 +3,9 @@
   padding: 0;
 }
 
-div {
-  color: red;
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../fonts/NanumSquareRoundR.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
