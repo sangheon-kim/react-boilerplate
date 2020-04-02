@@ -33,5 +33,5 @@
 
 ### v1.2.0 (20200402)
 
-- [ ] add E2E Test(Cypress)
-- [ ]
+- [x] add E2E Test(Cypress) - Please Edit cypress/integration
+- [ ] add Indexed DB
