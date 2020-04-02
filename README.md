@@ -1,5 +1,7 @@
 # React Boilerplate
 
+## Version 1.2.0
+
 ## Author
 
 - <h2>Sangheon Kim (ksj8367@gmail.com)</h2>
@@ -34,4 +36,6 @@
 ### v1.2.0 (20200402)
 
 - [x] add E2E Test(Cypress) - Please Edit cypress/integration
+
+### v1.3.0 (20200403)
 - [ ] add Indexed DB
